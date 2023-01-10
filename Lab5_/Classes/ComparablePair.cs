@@ -15,7 +15,7 @@ namespace Lab5_.Classes {
         public override string ToString() {
             return $"({Value1.ToString()}, {Value2.ToString()})";
         }
-        public void getCompareResult(ComparablePair<U, T> pair, Action<string> output) {
+        public void GetCompareResult(ComparablePair<U, T> pair, Action<string> output) {
             int i = CompareTo(pair);
             if (i == 0) { output($"{this.ToString()} == {pair.ToString()}"); }
             else if (i > 0) { output($"{this.ToString()} > {pair.ToString()}"); }

@@ -8,24 +8,24 @@ Console.WriteLine(pair.ToString());
 ComparablePair<int, string> pair2 = new ComparablePair<int, string>(1, "66");
 ComparablePair<int, string> pair3 = new ComparablePair<int, string>(10, "78");
 
-pair2.getCompareResult(pair3, x => Console.WriteLine(x));
+pair2.GetCompareResult(pair3, x => Console.WriteLine(x));
 
-ComparablePair<int, string> pair4 = new ComparablePair<int, string>(100, "1");
-ComparablePair<int, string> pair5 = new ComparablePair<int, string>(100, "2");
+ComparablePair<int, double> pair4 = new ComparablePair<int, double>(100, 2.1);
+ComparablePair<int, double> pair5 = new ComparablePair<int, double>(100, 2.2);
 
-pair4.getCompareResult(pair5, x => Console.WriteLine(x));
+pair4.GetCompareResult(pair5, x => Console.WriteLine(x));
 
-ComparablePair<int, string> pair6 = new ComparablePair<int, string>(100, "2");
-ComparablePair<int, string> pair7 = new ComparablePair<int, string>(100, "1");
+ComparablePair<float, string> pair6 = new ComparablePair<float, string>(100.100f, "2");
+ComparablePair<float, string> pair7 = new ComparablePair<float, string>(100.100f, "1");
 
-pair6.getCompareResult(pair7, x => Console.WriteLine(x));
+pair6.GetCompareResult(pair7, x => Console.WriteLine(x));
 
 ComparablePair<int, string> pair8 = new ComparablePair<int, string>(10, "66");
 ComparablePair<int, string> pair9 = new ComparablePair<int, string>(1, "78");
 
-pair8.getCompareResult(pair9, x => Console.WriteLine(x));
+pair8.GetCompareResult(pair9, x => Console.WriteLine(x));
 
 ComparablePair<int, string> pair10 = new ComparablePair<int, string>(100, "100");
 ComparablePair<int, string> pair11 = new ComparablePair<int, string>(100, "100");
 
-pair10.getCompareResult(pair11, x => Console.WriteLine(x));
+pair10.GetCompareResult(pair11, x => Console.WriteLine(x));
