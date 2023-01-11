@@ -13,7 +13,7 @@ namespace Lab5_.Classes {
             Value2 = value2;         
         }
         public override string ToString() {
-            return $"({Value1.ToString()}, {Value2.ToString()})";
+            return $"({Value1}, {Value2})";
         }
         public void GetCompareResult(ComparablePair<U, T> pair, Action<string> output) {
             int i = CompareTo(pair);
